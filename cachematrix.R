@@ -5,6 +5,10 @@
 
 ## This function creates a cached version of the matric storing the original data and the inverse.
 ## The inverse is computed lazily and so the set function sets the inverse to null.
+## How to test
+## 1. Create a square matrix which is invertible
+## 2. Call makeCacheMatrix to create the special matrix y <- makeCachematrix(R)
+## 3. Call cacheSolve(y) to compute the imverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -40,3 +44,6 @@ cacheSolve <- function(x, ...) {
   inverse
   
 }
+
+
+
